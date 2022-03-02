@@ -1,0 +1,17 @@
+CheckList
+1. n개의 길이를 가진 배열 생성 (초기화)
+ > Array.from({length: n})
+ > Array.from({length: n}, () => 초기화값) 
+ > Array.from({length: n}, (v, i) => i) //인덱스로 초기화값
+ > Array.from('foo') //['f', 'o', 'o'];
+2. Set을 이용해서 배열의 중복 제거하기 !중요!
+ > [...new Set(arr)]
+ > set의 api : add, has, size
+ > Array.from을 이용해서 set을 array로 변환 가능 Array.from(set)
+ > 교집합: let intersection = new Set([...set1].filter(x => set2.has(x)));
+ > 차집합: let difference = new Set([...set1].filter(x => !set2.has(x))); 
+3. Object 배열로 만들기
+ > keys : Object.keys(obj) = ['key1', 'key2']
+ > values : Object.values(obj) = ['value1', 'value2']
+ > entries : Object.entries(obj) = ['key1', 'value1']
+   >>  for문에서 한번에 풀어쓰기 for(const [key, value] of Object.entries(obj)) {}
