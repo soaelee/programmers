@@ -1,0 +1,9 @@
+CheckList
+1. reduce
+ > callback arguments: accumulator, currentValue, currentIndex, array 
+    > acc : 콜백의 반환값 누적 콜백의 이전 반환값 또는, 콜백의 첫 번째 호출이면서 initialValue를 제공한 경우에는 initialValue의 값입니다.
+    > cur : 처리할 현재 요소.
+    > index : 처리할 현재 요소의 인덱스.
+    > array : xreduce()를 호출한 배열.
+ > initial value: undefined일 경우, 배열의 첫번째 요소 값이고 cur은 두번째 요소의 값을 갖게됨.
+  
