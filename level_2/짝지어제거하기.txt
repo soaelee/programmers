@@ -1,0 +1,12 @@
+CheckList
+1. Stack 자료구조 (LIFO: Last In First Out : 가장 최근 추가 항목이 가장 먼저 제거)
+ > 제한적으로 접근할 수 있는 배열 구조
+ > 접근 방법은 한쪽 끝에서만 자료를 넣거나 뺄 수 있는 선형 구조
+ > Method (Top에서만 발생)
+    > push()
+    > pop()
+ > State
+    > Overflow : 스택 사이즈까지 다 채워진 상태
+    > Underflow : 스택이 다 비워진 상태
+ > Example : undo(실행취소), backtracking, history.back(), 후위표기법 연산, 역순출력
+ 
