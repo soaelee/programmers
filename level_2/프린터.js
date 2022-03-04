@@ -17,10 +17,22 @@
 // location은 0 이상 (현재 대기목록에 있는 작업 수 - 1) 이하의 값을 가지며 대기목록의 가장 앞에 있으면 0, 두 번째에 있으면 1로 표현합니다.
 
 const solution = (priorities, location) => {
-  const answer = Array.from({ length: priorities.length }, () => 0);
-
-  console.log(priorities);
-  for (let i = 1; i < priorities.length; i++) {}
+  let answer = 0;
+  while (priorities.length) {
+    const peek = priorities.shift();
+    const max = priorities.length > 0 ? Math.max(...priorities) : 1;
+    if (peek >= max) {
+      answer++;
+      if (location === 0) break;
+    } else {
+      priorities.push(peek);
+    }
+    location--;
+    if (location === -1) {
+      location = priorities.length - 1;
+    }
+  }
+  return answer;
 };
 let priorities = [2, 1, 3, 2];
 // priorities = [1, 1, 9, 1, 1, 1];
