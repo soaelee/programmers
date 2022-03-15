@@ -16,7 +16,7 @@
         }
     numbers[left + 1] = cur;
     }
-    return numbers느;
+    return numbers;
     };
 
     > 두개의 테스트케이스는 통과했으나 [0, 0, 0]인 경우와 시간초과로 실패
