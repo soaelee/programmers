@@ -1,0 +1,6 @@
+// CheckList
+1. splite vs slice
+  > splice() : 원본 배열 주소 참조, 제거한 요소를 담은 배열 반환
+    (start, deleteCnt, item1, item2 ...)
+  > slice() : 배열의 값 복사하여 새로운 배열 반환
+    (start, end) : 지정하지 않을 경우 배열 끝까지, 음수일 경우 끝에서부터
